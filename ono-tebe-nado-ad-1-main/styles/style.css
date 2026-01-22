@@ -1,0 +1,350 @@
+/* место для вашего кода */
+.body {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  position: relative;
+  margin: auto;
+  width: 1100px;
+  height: 293px;
+}
+
+.test {
+  font-size: 20px;
+  margin: 0;
+}
+
+.header__menu {
+  position: absolute;
+  top: 45%;
+  left: 45px;
+  display: flex;
+  width: 391px;
+  height: 22px;
+}
+
+.header__menu_button {
+  background-color: #ffffff;
+  border: none;
+  margin: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.header__menu_button:last-child {
+  text-decoration: underline;
+}
+
+.header__menu_button:nth-child(3) {
+  text-decoration: underline;
+}
+
+.header__img {
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 30%;
+}
+
+.header__contacts {
+  position: relative;
+  left: 850px;
+  width: 240px;
+}
+
+.header__contacts_contact {
+  color: black;
+  margin: 0;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.header__contacts_adres {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  font-size: 18px;
+}
+
+.body__nado {
+  margin: auto;
+  width: 1100px;
+  height: 757px;
+  background-image: url(image/lotus-flower.png);
+  background-size: cover;
+}
+
+.body__nado::before {
+  content: "";
+  display: block;
+  width: 1100px;
+  height: 757px;
+  position: absolute;
+  top: 304px;
+  left: 190px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.body__nado_title {
+  position: absolute;
+  bottom: -100px;
+  right: 240px;
+  width: 1000px;
+  height: 385px;
+}
+
+.body__nado_title_text {
+  position: relative;
+  margin: 0;
+  color: white;
+  width: 339px;
+  height: 115px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30px;
+}
+
+.body__nado_title_text:nth-child(2) {
+  margin: auto;
+}
+
+.body__nado_title_text:nth-child(3) {
+  left: 610px;
+  top: 30px;
+}
+
+.body__nado_description {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  top: 650px;
+  width: 1000px;
+  height: 51px;
+}
+
+.body__nado_description_text {
+  position: relative;
+  bottom: 9px;
+  word-spacing: 20px;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
+
+.body__nado_description_button {
+  color: #ffffff;
+  cursor: pointer;
+  width: 256px;
+  height: 51px;
+  border: 1px solid white;
+  background: none;
+}
+
+.body__nado_description_button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.body__nado_description_button_text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.lots {
+  margin: auto;
+  width: 1100px;
+  height: 757px;
+}
+
+.lots_title {
+  font-weight: 700;
+  width: 121px;
+  height: 47px;
+  font-size: 40px;
+  margin-left: 60px;
+}
+
+.lots__cards {
+  display: flex;
+}
+
+.lots__card {
+  margin-left: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(image/film.jpg);
+  background-size: cover;
+  width: 334px;
+  height: 596px;
+}
+
+.lots__card:nth-child(2) {
+  background-image: url(image/book.jpg);
+  background-size: cover;
+}
+
+.lots__card:last-child {
+  background-image: url(image/risynok.jpg);
+  background-size: cover;
+}
+
+.lots__card::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 334px;
+  height: 596px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lots__card_title {
+  position: relative;
+  cursor: pointer;
+
+  top: 30px;
+  left: 50px;
+  color: #ffffff;
+  width: 254px;
+  height: 82px;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.lots__card_text {
+  position: relative;
+  color: #ffffff;
+  left: 50px;
+  bottom: 30px;
+  font-size: 20px;
+  width: 254px;
+  height: 144px;
+}
+
+.lots__card_text_two {
+  position: relative;
+  color: #ffffff;
+  left: 50px;
+  bottom: 242px;
+  font-size: 20px;
+  width: 254px;
+  height: 144px;
+}
+
+.lots__card_text_three {
+  position: relative;
+  color: #ffffff;
+  left: 50px;
+  bottom: 148px;
+  font-size: 20px;
+  width: 254px;
+  height: 144px;
+}
+
+.lots_button {
+  margin-top: 20px;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.onas {
+  margin: auto;
+  display: flex;
+  width: 1100px;
+  height: 570px;
+}
+
+.onas_img {
+  width: 240px;
+  height: 240px;
+}
+
+.onas__text {
+  margin-top: 120px;
+  margin-left: 60px;
+  width: 583px;
+  height: 449px;
+}
+
+.onas_img {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.onas__text_text {
+  margin-top: 90px;
+}
+
+.onas__text_text:last-child {
+  margin: 0;
+}
+
+.footer {
+  margin: auto;
+  display: flex;
+  width: 1100px;
+  height: 180px;
+}
+
+.footer__contacts {
+  position: relative;
+  left: 50px;
+  width: 240px;
+}
+
+.footer__contacts_contact {
+  margin: 0;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.footer__contacts_adres {
+  margin: 0;
+  font-size: 18px;
+}
+
+.footer__menu {
+  margin: auto;
+  position: relative;
+  bottom: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu_button {
+  background-color: #ffffff;
+  border: none;
+  margin: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footer__menu_button:nth-child(2) {
+  text-decoration: underline;
+}
+
+.footer__menu_button:nth-child(3) {
+  text-decoration: underline;
+}
+
+.socials {
+  position: relative;
+  right: 40px;
+}
+
+.socials_button {
+  margin-left: 24px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
