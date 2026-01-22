@@ -1,10 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <title>Оно тебе надо</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
 </html>
+<body class="body">
+  <div class="header">
+    <div class="header__menu">
+      <button class="header__menu_button">главная</button>
+      <p class="test">◦</p>
+      <button id="viewLotsButton" class="header__menu_button">
+        посмотреть лоты
+      </button>
+      <p class="test">◦</p>
+      <button id="onasButton" class="header__menu_button">об аукционе</button>
+    </div>
+
+    <img class="header__img" src="image/logo.png" alt="" />
+    <div class="header__contacts">
+      <p class="header__contacts_contact">+99995555555</p>
+      <a
+        class="header__contacts_contact"
+        href="https://mail.yandex.ru/"
+        target="_blank"
+        >info@sobaka.ge<br
+      /></a>
+      <a
+        class="header__contacts_adres"
+        href="https://yandex.ru/maps/-/CLFFEA7V"
+        target="_blank"
+      >
+        наб. Принсенграхт 263-<br />265. Амстердам
+      </a>
+    </div>
+  </div>
+  <div class="body__nado">
+    <div class="body__nado_title">
+      <p class="body__nado_title_text">ОНО</p>
+      <p class="body__nado_title_text">ТЕБЕ</p>
+      <p class="body__nado_title_text">НАДО</p>
+    </div>
+    <div class="body__nado_description">
+      <p class="body__nado_description_text">
+        АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ
+      </p>
+      <button class="body__nado_description_button">
+        <p class="body__nado_description_button_text">СДЕЛАТЬ СТАВКУ</p>
+      </button>
+    </div>
+  </div>
+  <div id="lotsSection" class="lots">
+    <h1 class="lots_title">ЛОТЫ</h1>
+    <div class="lots__cards">
+      <div class="lots__card">
+        <h1 class="lots__card_title">
+          ФИЛЬМ РЕЖИССЁРА, КОТОРЫЙ БРОСИЛ КИНОШКОЛУ
+        </h1>
+        <p class="lots__card_text">
+          Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
+          если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+        </p>
+      </div>
+      <div class="lots__card">
+        <h1 class="lots__card_title">
+          КНИГА, ГДЕ ОПИСАН ОДИН СКУЧНЫЙ ДЕНЬ ИЗ ЖИЗНИ РЕКЛАМНОГО АГЕНТА
+        </h1>
+        <p class="lots__card_text_two">
+          Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+          переходами на древнеанглийский. В ней одновременно рассказывается о 16
+          июня 1904 года и об истории литературы, начиная с античных времён. И
+          это всё накладывается на эпическую поэму Гомера. Сколько бы вы
+          поставили на «Улисса» Джеймса Джойса?
+        </p>
+      </div>
+      <div class="lots__card">
+        <h1 class="lots__card_title">
+          КАРТИНА, КОТОРУЮ ПОВТОРИТ ДАЖЕ 5-ЛЕТНИЙ СЫН МАМИНОЙ ПОДРУГИ
+        </h1>
+        <p class="lots__card_text_three">
+          Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+          похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
+          Сколько бы вы на такое поставили, если бы не знали, что это — одна из
+          революционных работ Кандинского?
+        </p>
+      </div>
+    </div>
+    <button class="lots_button">посмотреть больше</button>
+  </div>
+  <script>
+    document
+      .getElementById("viewLotsButton")
+      .addEventListener("click", function () {
+        const lotsSection = document.getElementById("lotsSection");
+        lotsSection.scrollIntoView({ behavior: "smooth" });
+      });
+  </script>
+  <div id="onasSection" class="onas">
+    <img class="onas_img" src="image/logoTwo.png" alt="" />
+    <div class="onas__text">
+      <h1 class="onas__text_title">ОБ АУКЦИОНЕ</h1>
+      <p class="onas__text_text">
+        Здесь вы не встретите очередное пафосное собрание невероятно дорогого
+        антиквариата. Наши лоты вообще не должны были попасть ни на один
+        аукцион. Потому что кому нужен дневник девочки-подростка или картина,
+        которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи,
+        созданные любителями?
+      </p>
+      <p class="onas__text_text">
+        Слишком сложные или, наоборот, слишком простые. Опережающие своё время.
+        В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то
+        они казались просто неудачными. Но, несмотря на критику, кажущуюся
+        простоту или сложность, сейчас без этих лотов невозможно представить
+        современную культуру. Когда в эти вещи не верил никто, продолжали верить
+        их создатели. И сейчас эти лоты стали культовыми.
+      </p>
+    </div>
+  </div>
+  <script>
+    document
+      .getElementById("onasButton")
+      .addEventListener("click", function () {
+        const onasSection = document.getElementById("onasSection");
+        onasSection.scrollIntoView({ behavior: "smooth" });
+      });
+  </script>
+</body>
+
+<footer class="footer">
+  <div class="footer__contacts">
+    <p class="footer__contacts_contact">+99995555555</p>
+    <p class="footer__contacts_contact">info@sobaka.ge</p>
+    <p class="footer__contacts_adres">
+      наб. Принсенграхт 263-<br />265. Амстердам
+    </p>
+  </div>
+  <div class="footer__menu">
+    <button class="footer__menu_button">главная</button>
+
+    <button id="viewLotsButton" class="footer__menu_button">
+      посмотреть лоты
+    </button>
+
+    <button id="onasButton" class="footer__menu_button">об аукционе</button>
+  </div>
+  <div class="socials">
+    <a href="https://www.youtube.com/" target="_blank"
+      ><button class="socials_button">
+        <img src="image/YouTube.png" alt="" /></button
+    ></a>
+    <a href="https://vk.com/feed" target="_blank">
+      <button class="socials_button"><img src="image/VK.png" alt="" /></button
+    ></a>
+    <a href="https://ru.pinterest.com/" target="_blank"
+      ><button class="socials_button">
+        <img src="image/Pinterest.png" alt="" /></button
+    ></a>
+  </div>
+</footer>
